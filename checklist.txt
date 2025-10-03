@@ -5,6 +5,8 @@ sudo apt-get install docker.io -y
 # Run the Mosquitto MQTT Broker
 docker run -d -p 1883:1883 -p 9001:9001 --name mqtt-broker eclipse-mosquitto
 
+chmod +x run.sh
+
 /Cognition/
 ├── models/
 │   ├── Qwen2-7B-Instruct-Q5_K_M.gguf
