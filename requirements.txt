@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+requests
+httpx
+paho-mqtt
+llama-cpp-python
+chromadb
+sentence-transformers
