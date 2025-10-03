@@ -1,0 +1,21 @@
+# Install Docker if you haven't already
+sudo apt-get update
+sudo apt-get install docker.io -y
+
+# Run the Mosquitto MQTT Broker
+docker run -d -p 1883:1883 -p 9001:9001 --name mqtt-broker eclipse-mosquitto
+
+/Cognition/
+├── models/
+│   ├── Qwen2-7B-Instruct-Q5_K_M.gguf
+│   └── LFM2-350M-Math-Q4_K_M.gguf
+├── tools/
+│   ├── __init__.py
+│   └── internal_tools.py
+├── memory/
+│   ├── __init__.py
+│   └── mega_memory_manager.py
+├── cognition_client.py
+├── orchestration.py
+├── requirements.txt
+└── run.sh
